@@ -1,36 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 소개
 
-## Getting Started
+[Adultlee - template]는 개인 프로젝트를 개발하며 반복되는 초기 셋팅에 대한 비용을 줄이기 위해서 기획되었습니다.
 
-First, run the development server:
+# 기술 스택
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+-   React : 18.2.0
+-   Next : 13.2.3
+-   typescript : 4.9.5
+-   emotion : 11.10.6
+-   sass : 1.58.3
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# 스타일링
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+많은 고민을 했으나, 익숙한 styeld-component 방식이 아닌 emotion 에서 제공하는 css prop 방식을 통한 스타일링을 사용하기로 하였습니다.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+styled-component의 컴포넌트명을 정하는 부분에서 발생하는 비용을 줄이고 싶었습니다.
+거기에 추가로, 복잡한 css가 요구 되는 경우 scss를 사용하여 ui개발에 대한 다양성을 확보했습니다.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+# Version 1 목표
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. emotion, sass 기반의 common 컴포넌트를 개발합니다.
+   -> 해당 컴포넌트의 종류로는 Text, button, Flex, Margin, layout(header , mian, footer)
+2. 1번에서 개발한 컴포넌트들을 이용하여 간단한 페이지를 구성합니다.
+3. npm 에 업로드
