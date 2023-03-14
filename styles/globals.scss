@@ -1,0 +1,13 @@
+@import "./common/text.scss";
+
+$primary-color: #0070f3;
+
+body {
+	background-color: #fff;
+	color: $primary-color;
+}
+
+p {
+	color: $primary-color;
+	text-decoration: none;
+}
